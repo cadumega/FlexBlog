@@ -90,4 +90,49 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   color: #122ab2;
 }
 
+/*  ◘◘◘ Introdução ◘◘◘ */
+
+.introducao {
+  font-size: 3em;       /* 48/16=3em  */      
+  line-height: 1;         /* ficar mais grudado as letras,tipografia grande fazer isso */
+  max-width: 960px;
+  margin: 0 auto;          /* centralizar externo*/
+  padding: 60px 10px;  /* ajustar espaçamento cimabaixo RightLeft interno */
+}
+
+/*  ◘◘◘ Sobre ◘◘◘ */
+.sobre {
+  border-top: 2px solid #2c70ff;
+  border-bottom: 2px solid #2c70ff;
+  max-width: 960px;
+  margin: 0 auto;    /* centralizar!! */
+  padding: 40px 0;     /* espaçar separação */
+  display: flex;     /* são os filhos da div */
+  flex-wrap: wrap;
+}
+
+.sobre-info {
+  flex: 2;     /* 2 grow 1 shrink 0 basis ao definir como 2 */
+  margin: 0 10px;   /* não deixar grudado */
+}
+
+.sobre-info h1 {
+  font-size: 3em;
+  margin-bottom: .5em;
+}
+
+.sobre-info p {
+  font-size: 1.25em;
+  line-height: 1.4;
+  margin-bottom: 1em;
+  color: #7c7c7c;    /* diminuir o contraste do txt */
+}
+
+.sobre-img {
+  flex: 1;
+  margin: 0 10px;
+}
+
+
+
 
