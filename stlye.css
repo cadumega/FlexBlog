@@ -108,12 +108,12 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   margin: 0 auto;    /* centralizar!! */
   padding: 40px 0;     /* espaçar separação */
   display: flex;     /* são os filhos da div */
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* quebrar as imagens */
 }
 
 .sobre-info {
-  flex: 2;     /* 2 grow 1 shrink 0 basis ao definir como 2 */
-  margin: 0 10px;   /* não deixar grudado */
+  flex: 2 1 300px;     /* 2 grow 1 shrink 0 basis, ao definir como 2; responsivo 1 300px */
+  margin: 0 10px;   /* alinhar com menu e não deixar grudado */
 }
 
 .sobre-info h1 {
@@ -122,7 +122,7 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 }
 
 .sobre-info p {
-  font-size: 1.25em;
+  font-size: 1.25em;   /* estilização do texto */
   line-height: 1.4;
   margin-bottom: 1em;
   color: #7c7c7c;    /* diminuir o contraste do txt */
@@ -133,6 +133,43 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   margin: 0 10px;
 }
 
+/*  ◘◘◘ Produtos ◘◘◘ */
+.produtos {
+  max-width: 960px;
+  margin: 60px auto;
+}
+
+.produtos h1 {
+  font-size: 3em;
+  margin: 0 10px 60px 10px;
+}
+
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end ;      /* center estaria alinhado ao centro */
+}
+
+.produtos-item{
+  flex: 1 1 175px;   /* safari pode bugar o basis, teria q colocar min-width 175px */
+  margin: 10px;
+}
+
+.produtos-item h2 {
+  font: size 3em;
+  color: #a4a4a4;
+  background: #f7f7f7;
+  padding: 60px 20px;
+}
 
 
-
+.purple {     /* São OS TRAÇOS Coloridos  */
+  border-top: 8px solid #ae81ff;
+}
+.pink {
+  border-top: 8px solid #f9265e;
+}
+.blue {
+  border-top: 8px solid #66d9eb;
+/*   align-self: flex-end; */      /* alinha com o blue */
+}
