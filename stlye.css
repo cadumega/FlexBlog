@@ -30,7 +30,7 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 
 /*  ◘◘◘ Superinfo ◘◘◘ */
 .superinfo-bg {
-  background: blue;
+  background: rgb(0, 0, 150);
   color: white;
 }
 .superinfo {
@@ -38,7 +38,7 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   margin: 0 auto;       /* alinhar ao centro o txt */
   display: flex;        /* elementos um ao lado do outro padrão */
   justify-content: space-between;        /* alinhados ponta a ponta */
-  flex-wrap:  wrap;                /* vão quebrando se eu diminuir a página */
+  flex-wrap: wrap;                /* vão quebrando se eu diminuir a página */
   padding-top: 10px;           /* espaçamento top */
 }
 
@@ -54,3 +54,40 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 .menu-bg {
   background: #2c70ff;
 }
+
+.menu {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px 0;  /* distância do elemento top e bottom */
+  display: flex;
+  flex-wrap: wrap;       /* quebra */
+  justify-content: space-between; /* alinhados na ponta */
+  align-items: center;      /* marca sempre no centro */
+}
+
+.menu a { 
+  color: white;
+}
+
+.menu-logo a {
+  font-size: 2.25em;          /* 36/16=2,25em */
+  font-weight: bold;
+  margin: 0 auto;        /* se diminuir a janela a ul não grudar, como um gutter */
+}
+
+.menu-nav ul {
+  display: flex;        /* posso ter flex dentro de flex */
+  flex-wrap: wrap;
+}
+
+.menu-nav a {
+  font-size: 1.25em;
+  display: block;
+  padding: 10px;  /* aumentar a área de contato */
+}
+
+.menu-nav a:hover {        /* ao passar o mouse muda a cor */
+  color: #122ab2;
+}
+
+
