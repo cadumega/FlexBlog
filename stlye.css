@@ -1,0 +1,56 @@
+/* ◘◘◘ RESET de estilos ◘◘◘ */
+
+body, h1, h2, p, ul, li, a{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Nunito',Helvetica, Arial,sans-serif;
+  color: #222222;
+}
+
+ul {             
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {  /* quero que as imagens sejam responsivas, não estora os containers com max-width */
+  display: block;
+  max-width: 100%;
+}
+
+* {     /* estilo geral que mostra todas as tags, a área de conteúdo dos elementos */
+  box-sizing: border-box;
+}
+
+
+/*  ◘◘◘ Superinfo ◘◘◘ */
+.superinfo-bg {
+  background: blue;
+  color: white;
+}
+.superinfo {
+  max-width: 960px;
+  margin: 0 auto;       /* alinhar ao centro o txt */
+  display: flex;        /* elementos um ao lado do outro padrão */
+  justify-content: space-between;        /* alinhados ponta a ponta */
+  flex-wrap:  wrap;                /* vão quebrando se eu diminuir a página */
+  padding-top: 10px;           /* espaçamento top */
+}
+
+.superinfo p, .superinfo a {
+  margin: 0 10px 10px 10px;     /* margem up down R L */
+}
+
+.superinfo a {
+  color: white;
+}
+
+/*  ◘◘◘ MENU ◘◘◘ */
+.menu-bg {
+  background: #2c70ff;
+}
