@@ -1,11 +1,12 @@
 # FlexBlog
-https://cadumega.github.io/FlexBlog/
+**https://cadumega.github.io/FlexBlog/**
 
- **Criação de Site por CSS_FlexBox.**
+ # Criação de Site por CSS_FlexBox.
+ ---
  
- 1) Criação do HTML  e classes CSS nas tags. 
+## 1) Criação do HTML  e classes CSS nas tags. 
     
-    2) CSS subdividido em sessões:
+  ##  2) CSS subdividido em sessões:
     Reset all
     Superinfo
     Menu
@@ -16,7 +17,7 @@ https://cadumega.github.io/FlexBlog/
     Newsletter
     Footer
 
-**Padrões do site:**
+## Padrões do site:
 max-width: 960px;     /* Distância de uma ponta a outra */
 margin: 0 auto;       /* alinhar ao centro o txt */
 display: flex;     /* elementos um ao lado do outro padrão */
