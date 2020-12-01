@@ -310,3 +310,81 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   color: #7c7c7c ;
 }
 
+/*  ◘◘◘ Newsletter ◘◘◘ */
+.newsletter {
+  background: #f7f7f7;
+  padding: 60px calc((100% - 960px) /2); /* poderia fazer que nem no menu com div ou dessa maneira com calc que já esta alinhado a margem também */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-info {
+  flex: 1 1 200px;
+  margin: 0 10px;
+}
+
+.newsletter-info h1 {
+  font-size: 3em;
+  color: #a4a4a4;
+}
+
+.newsletter-info p {
+  font-size: 1.25em;
+  font-style: italic;
+  max-width: 230px; /* quero que quebre a box com o txt */
+  color: #7c7c7c;
+  margin-bottom: 10px;
+}
+
+.newsletter-form {
+  flex: 2 1 260px; /* mínimo de width 260px */
+  margin: 0 10px;    /* alinhar ao reduzir a página também*/
+  align-self: center;  /* alinhar ao centro */
+  display: flex;    /* apesar de ficar lado a lado por padrão quero q quebre */
+  flex-wrap: wrap;  /* quero que quebre quando não caber + */
+}
+
+.newsletter-form input {   /* box de escrever e-mail grande */
+  flex: 3 1 200px;       /* 200px de basis por causa do safari */    
+  font-size: 1.50em;
+  color: #7c7c7c;
+  font-style: italic;
+  font-family: "Nunito", Helvetica, Arial,sans-serif;
+  background: transparent;
+  padding: 15px 10px;
+  margin: 0px;
+  border-radius: 0px;  /* arredondado por padrão no safari, quero tirar isso 0px */
+}
+
+.newsletter-form button {   /* botão ASSINAR */
+  flex: 1 1 200px;             
+  font-size: 1.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #2c70ff;
+  color: white;
+  margin: 0px;
+  cursor: pointer;    /* aparecer a mãozinha indicativa ao passar o mouse */
+  padding: 15px 10px;
+}
+
+@media(max-width:600px) {      /* abaixo de 600px diminuir a fontesize */
+  .newsletter-form button {
+    font-size: 1.5em;
+  }
+}
+
+/*  ◘◘◘ Footer ◘◘◘ */
+.footer {
+  display: flex;
+  background: #2c70ff;
+  height: 200px;
+  align-items: center;
+}
+
+.footer p {
+  flex: 1;
+  text-align: center;
+  font-size: 2.00em;
+  color: #122ab2;
+}
