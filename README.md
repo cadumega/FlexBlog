@@ -18,10 +18,10 @@
     Footer
 
 ## Padrões do site:
--max-width: 960px;     /* Distância de uma ponta a outra */
--margin: 0 auto;       /* alinhar ao centro o txt */
--display: flex;     /* elementos um ao lado do outro padrão */
--flex-wrap: wrap;  /* quebrar as imagens e deixar responsivo */
+- max-width: 960px;     /* Distância de uma ponta a outra */
+- margin: 0 auto;       /* alinhar ao centro o txt */
+- display: flex;     /* elementos um ao lado do outro padrão */
+- flex-wrap: wrap;  /* quebrar as imagens e deixar responsivo */
 
 **Verificar grow shrink basis.**
 
