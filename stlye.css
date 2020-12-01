@@ -264,3 +264,49 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 .preco .preco-item:nth-child(2) {   /* o cobre por padrão é order 0,ñ selecionar */
   order: -1
 }
+
+/*  ◘◘◘ Preço ◘◘◘ */
+.qualidade {
+  max-width: 960px;     /* posicionamento da div */
+  margin: 60px auto;  /* ajustar a margem do site */
+  display: flex;
+  flex-wrap: wrap;    /* quebrar responsivo */
+}
+
+.qualidade-item {
+  flex: 1 1 300px; /* 1/3 do layout; 1 grow 1 shrink 300px basis */
+  margin: 20px 10px;
+  /* height: 300px;    /* forçar altura,mas não é ideal */ */
+}
+
+.qualidade-item h2 {
+  font-size: 2.25em;      /* texto estilização */
+  color: #a4a4a4;
+  margin-bottom: 20px;
+}
+
+.qualidade-item h2::before {    /* tracinho do subtítulo q vem antes pseudoelement */
+  content: '';             /* se escrever algo irá aparecer,deixar vazio */   
+  display: inline-block;       /* mostrar na linha */
+  width:8px;
+  height: 30px;
+  margin-right: 10px;         /* espaçar right */
+  background: blue;
+}
+
+.qualidade-item:nth-of-type(3n+1) h2::before{   /* classe nth-of-type é pseudoseletor */
+  background: #ae81ff                        /*  nth-of-type(3) só iria falar com o 3°*/
+}
+.qualidade-item:nth-of-type(3n+2) h2::before{
+  background: #f9265e
+}
+.qualidade-item:nth-of-type(3n+3) h2::before{
+  background: #66d9eb
+}
+
+.qualidade-item p {
+  font-size: 1.125em;
+  line-height: 1.4;
+  color: #7c7c7c ;
+}
+
